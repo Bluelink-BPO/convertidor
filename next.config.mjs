@@ -10,6 +10,7 @@ const nextConfig = {
     unoptimized: true,
   },
   basePath: '/convertidor',
+  trailingSlash: true,
 }
 
 export default nextConfig
