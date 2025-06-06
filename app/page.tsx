@@ -179,7 +179,7 @@ export default function Component() {
             whileHover={{ scale: 1.1, rotate: 5 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
-            <img src="/bluelink_logo.png" alt="Bluelink BPO" className="w-full h-full object-contain" />
+            <img src="/convertidor/bluelink_logo.png" alt="Bluelink BPO" className="w-full h-full object-contain" />
           </motion.div>
           {/* <motion.h1
             className="text-4xl font-bold text-white mb-2"
