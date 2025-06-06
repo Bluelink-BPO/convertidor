@@ -79,7 +79,7 @@ export default function Component() {
     formData.append("file", file)
 
     try {
-      const response = await fetch("/api/convert", {
+      const response = await fetch("/convertidor/api/convert", {
         method: "POST",
         body: formData,
       })
