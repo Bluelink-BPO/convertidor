@@ -9,6 +9,7 @@ import ComponentTxtAexcel from "./app/convert-excel/page"
 import ExcelRepairApp from "./app/reparador-excel/page"
 import { motion, AnimatePresence } from "framer-motion"
 import { FileText, Wrench, HelpCircle } from "lucide-react";
+import ComponentInfoDev from "./components/info-desarrollador"
 
 const getIconByLabel = (label: string) => {
   switch (label) {
@@ -43,6 +44,7 @@ export default function Component() {
   const [activePage, setActivePage] = useState<PageType>("dashboard")
   const [isLoading, setIsLoading] = useState(false)
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
+  const [showInfo, setShowInfo] = useState(false);
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -190,36 +192,29 @@ export default function Component() {
     `}</style>
 
       {/* Watermark */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 2 }}
-        className="fixed bottom-4 right-4 z-50"
-      >
-        <motion.div
-          className="bg-black/20 backdrop-blur-sm rounded-full px-4 py-2 text-white/70 text-sm font-medium"
-          whileHover={{ scale: 1.05, backgroundColor: "rgba(0,0,0,0.3)" }}
-          transition={{ type: "spring", stiffness: 300 }}
-        >
-          @MerzDev
-        </motion.div>
-      </motion.div>
+      < ComponentInfoDev
+        nombreDesarrollador="@MerzDev"
+        especialidad="Backend Developer"
+        correo="frederich.merz@bluelinkbpo.com.co"
+        empresa="Bluelink BPO"
+        area="TI"
+        posicionBoton="right-4"
+        cargo="Aprendiz TI"
+      />
 
 
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 2 }}
-        className="fixed bottom-4 left-4 z-50"
-      >
-        <motion.div
-          className="bg-black/20 backdrop-blur-sm rounded-full px-4 py-2 text-white/70 text-sm font-medium"
-          whileHover={{ scale: 1.05, backgroundColor: "rgba(0,0,0,0.3)" }}
-          transition={{ type: "spring", stiffness: 300 }}
-        >
-          @JormanDev
-        </motion.div>
-      </motion.div>
+      < ComponentInfoDev
+        nombreDesarrollador="@JormanDev"
+        especialidad="Backend Developer"
+        correo="jorman.viafara@bluelinkbpo.com.co"
+        empresa="Bluelink BPO"
+        area="TI"
+        posicionBoton="left-4"
+        cargo="Analista de Implementacion"
+      />
+
+
+
     </div>
   )
 }
