@@ -110,7 +110,7 @@ export default function Component() {
       <div className="fixed top-4 left-4 z-50 pointer-events-auto">
         <div className="flex items-center justify-center w-28 h-28 bg-white/80 backdrop-blur-sm rounded-full p-3 shadow-xl border border-white/30 hover:scale-110 hover:rotate-3 transition-all duration-300 cursor-pointer">
           <img
-            src="/convertidor/bluelink_logo.png"
+            src="bluelink_logo.png"
             alt="Bluelink BPO"
             className="w-full h-full object-contain"
           />
@@ -121,7 +121,7 @@ export default function Component() {
       <div className="fixed top-4 right-4 z-50 pointer-events-auto">
         <div className="flex items-center justify-center w-28 h-28 bg-white/80 backdrop-blur-sm rounded-full p-3 shadow-xl border border-white/30 hover:scale-110 hover:rotate-3 transition-all duration-300 cursor-pointer">
           <img
-            src="/convertidor/logo_supergiros.png"
+            src="logo_supergiros.png"
             alt="Bluelink BPO"
             className="w-106 h-106 object-contain" // Cambia 96 por el tamaño que quieras
           />
