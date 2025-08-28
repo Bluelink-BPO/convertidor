@@ -179,7 +179,7 @@ export default function ComponentTxtAexcel() {
           {/* Header */}
           <div className="text-center mb-8">
             <div className="flex items-center justify-center mb-6">
-              <Image src="/convertidor/bluelink_logo.png" alt="Bluelink BPO" width={300} height={80} className="drop-shadow-2xl opacity-0" />
+              <Image src="bluelink_logo.png" alt="Bluelink BPO" width={300} height={80} className="drop-shadow-2xl opacity-0" />
             </div>
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 drop-shadow-lg">
               Txt a Excel
