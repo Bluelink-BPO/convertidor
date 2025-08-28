@@ -9,7 +9,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '/convertidor',
+  basePath: '/',
   trailingSlash: true,
 }
 
