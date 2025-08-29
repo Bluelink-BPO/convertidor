@@ -80,7 +80,7 @@ export default function ComponentTxtAexcel() {
     formData.append("file", file)
 
     try {
-      const response = await fetch("/convertidor/convert-excel/api/convert", {
+      const response = await fetch("/convert-excel/api/convert", {
         method: "POST",
         body: formData,
       })

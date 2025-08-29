@@ -63,7 +63,7 @@ export default function ExcelRepairApp() {
         })
       }, 200)
 
-      const response = await fetch("/convertidor/reparador-excel/api/repair-excel", {
+      const response = await fetch("/reparador-excel/api/repair-excel", {
         method: "POST",
         body: formData,
       })
@@ -143,7 +143,7 @@ export default function ExcelRepairApp() {
     formData.append("file", file)
 
     try {
-      const response = await fetch("/convertidor/reparador-excel/api/repair-excel", {
+      const response = await fetch("/reparador-excel/api/repair-excel", {
         method: "POST",
         body: formData,
       })
